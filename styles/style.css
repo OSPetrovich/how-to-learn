@@ -86,12 +86,13 @@ div {
   z-index: 3;
 }
 
-.two-columns {
+.description {
   display: flex;
   justify-content: space-between;
-  margin: 100px auto;
+  margin: 100px auto 0;
   width: 80%;
   min-height: initial;
+  border: 1px solid red;
 }
 
 .description__brief {
@@ -124,4 +125,60 @@ div {
 
 .description__main-text_paragraph_end {
   margin: 0;
+}
+
+.digits {
+  border: 1px solid red;
+}
+
+.digits__section-title {
+  width: 60%;
+  margin: 100px auto 0;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 600;
+  border: 1px solid red;
+}
+
+.digits__section-subtitle {
+  width: 60%;
+  margin: 20px auto 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  border: 1px solid red;
+}
+
+.digits__table {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 100px;
+  width: 1100px;
+  border: 1px solid red;
+}
+
+.digits__table__cell {
+  width: 250px;
+  margin-top: 60px;
+  border: 1px solid red;
+}
+
+.digits__table__cell__heading {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 600;
+  margin: 0;
+}
+
+.digits__table__cell__text {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 20px 0 0 0;
 }
