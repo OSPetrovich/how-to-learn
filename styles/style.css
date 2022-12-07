@@ -25,7 +25,7 @@
   height: 32px;
 }
 
-.logo__place_header {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -51,12 +51,9 @@
   right: 0;
 }
 
-.link-decoration-none {
-  text-decoration: none;
-}
-
 .header__link {
   color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__subtitle {
@@ -77,10 +74,6 @@
   right: 0;
   bottom: 0;
   z-index: 1;
-}
-
-.description {
-  min-height: auto;
 }
 
 .two-columns {
@@ -121,7 +114,6 @@
 }
 
 .digits {
-  min-height: auto;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -133,7 +125,6 @@
   font-size: 60px;
   line-height: 1.15;
   font-weight: 600;
-  z-index: 2;
 }
 
 .section-subtitle {
@@ -143,17 +134,16 @@
   line-height: 34px;
   font-weight: normal;
   margin: 20px auto 0;
-  z-index: 2;
 }
 
-.cell__heading {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
   margin: 0;
 }
 
-.cell__text {
+.table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -163,7 +153,6 @@
 .table {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
@@ -178,6 +167,7 @@
 
 .feynman {
   height: 890px;
+  min-height: auto;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -192,7 +182,7 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
-  z-index: 2;
+  z-index: 1;
 }
 
 .feynman__subtitle {
@@ -200,7 +190,7 @@
   width: fit-content;
   text-align: center;
   margin: 70px auto 0;
-  z-index: 2;
+  z-index: 1;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -215,7 +205,7 @@
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
-  z-index: 2;
+  z-index: 1;
 }
 
 .feynman__illustration {
@@ -224,18 +214,6 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 1;
-}
-
-.content__text_theme_dark {
-  color: white;
-}
-
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
 }
 
 .kaufman {
@@ -247,26 +225,52 @@
   background-size: 877px 877px;
   background-position: top 0 right -210px;
   overflow: hidden;
-  min-height: auto;
 }
 
-.kaufman__table {
+.section-title_theme_dark {
+  margin: 0 auto 0;
+  width: 60%;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 600;
+  color: white;
+}
+
+.section-subtitle_theme_dark {
+  width: 60%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  margin: 20px auto 0;
+  color: white;
+}
+
+.table__theme_dark {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0 auto;
   width: 1100px;
+  color: white;
 }
 
-.kaufman__table__cell {
+.table__cell_theme_dark {
   width: 200px;
   margin-top: 80px;
 }
 
-.kaufman__table__cell__text {
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.table__text_theme_darck {
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
@@ -282,17 +286,15 @@
 
 .footer__columns {
   display: flex;
-  align-items: stretch;
   justify-content: space-between;
   margin: 60px auto 40px;
   width: 90%;
 }
 
-.footer__column__content_copyright {
+.footer__column_content_copyright {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
   flex-basis: 711px;
 }
 
@@ -310,7 +312,7 @@
   font-weight: 600;
 }
 
-.footer__column__content_info {
+.footer__column_content_info {
   color: white;
 }
 
@@ -329,34 +331,10 @@
   text-decoration: none;
 }
 
-.footer__column__content_social {
-  display: flex;
-  flex-direction: column;
-}
-
-.fotter__social-icon {
-
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: normal;
+.footer__column_content_social {
   color: white;
-  text-decoration: none;
 }
 
-.fotter__social-icon[href^="https://www.youtube.com/"]::before {
-	content: url('../images/youtube-icon.svg');
-  background-size: 16px 16px;
-  padding-right: 10px;
-}
-
-.fotter__social-icon[href^="https://vk.com/"]::before {
-	content: url('../images/vk_color_white.svg');
-  background-size: 16px 16px;
-  padding-right: 10px;
-}
-
-.fotter__social-icon[href^="https://www.tiktok.com/"]::before {
-	content: url('../images/tiktok-icon.svg');
-  background-size: 16px 16px;
-  padding-right: 10px;
+.footer__social-icon {
+  margin: 0 10px 0 0;
 }
