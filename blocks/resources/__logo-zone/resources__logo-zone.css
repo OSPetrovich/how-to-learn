@@ -3,4 +3,6 @@
   justify-content: space-between;
   margin: 80px auto 217px;
   width: 1100px;
+  list-style: none;
+  padding: 0;
   }

@@ -5,4 +5,10 @@
   text-decoration: none;
   margin: 0;
   align-items: center;
+  opacity: 1;
+  transition: opacity .5s ease;
+}
+
+.footer__column-link:hover {
+  opacity: 0.5;
 }
